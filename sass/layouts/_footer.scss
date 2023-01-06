@@ -20,22 +20,32 @@
 }
 
 footer {
+  display: flex;
+  text-align: center;
   background-color: var(--main-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 address {
-  margin-top: 9px;
+  margin-top: 13px;
   font-style: normal;
 }
 
 .footer__container {
   display: flex;
-}
-
-.footer__block:nth-child(1n) {
-  margin-right: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 60px;
+  @include tablet {
+    justify-content: space-around;
+  }
+  @include desktop {
+  }
 }
 
 .footer__heading {
@@ -94,8 +104,17 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-right: 12px;
+  margin-bottom: 20px;
   outline: none;
   color: #fff;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include desktop {
+    display: inline-block;
+  }
 }
 
 .form__submit-btn {

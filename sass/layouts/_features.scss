@@ -23,17 +23,12 @@
   }
 }
 
-.item__icon {
-  display: block;
-  width: 100%;
+.icon-block {
   height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 100px;
-}
-
-.features__icon {
   margin-bottom: 30px;
+  background-color: #f5f4fa;
+  @include flex();
+  border-radius: 4px;
 }
 
 .item__subtitle {

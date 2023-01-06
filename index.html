@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <a href="" class="logo header__logo link">WebStudio</a>
         <nav class="navigation">
@@ -56,8 +56,96 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open">
+          <svg class="icon-menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu">
+        <div class="container">
+          <div class="menu-content">
+            <div>
+              <button type="type" class="menu-close">
+                <svg class="mob-icon-close" width="18" height="18">
+                  <use href="./images/icons.svg#icon-mob-close"></use>
+                </svg>
+              </button>
+              <nav class="mob-navigation">
+                <ul class="mob-navigation__list list">
+                  <li class="mob-item">
+                    <a href="" class="mob-navigation__link link current"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="./portfolio.html" class="mob-navigation__link link"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="" class="mob-navigation__link link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <ul class="mob-authentication list">
+                <li class="mob-contact">
+                  <a
+                    href="tel:+12127724150"
+                    class="mob-authentication__tel link"
+                  >
+                    +1 212-772-4150
+                  </a>
+                </li>
+                <li class="mob-contact">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-authentication__email link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-social-link__list list">
+                <li>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mob-social-link__link link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mob-social-link__link link"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mob-social-link__link link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    rel="noopener noreferrer nofollow"
+                    class="mob-social-link__link link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="hero__container container">
@@ -73,13 +161,11 @@
           <h2 hidden>Our features</h2>
           <ul class="feature__list list">
             <li class="items">
-              <svg class="item__icon features__icon">
-                <use
-                  href="./images/icons.svg#icon-antenna"
-                  width="70"
-                  height="70"
-                ></use>
-              </svg>
+              <div class="icon-block">
+                <svg class="item__icon features__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="item__subtitle section-subtitle">
                 Attention to details
               </h3>
@@ -89,13 +175,11 @@
               </p>
             </li>
             <li class="items">
-              <svg class="item__icon features__icon">
-                <use
-                  href="./images/icons.svg#icon-clock"
-                  width="70"
-                  height="70"
-                ></use>
-              </svg>
+              <div class="icon-block">
+                <svg class="item__icon features__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="item__subtitle section-subtitle">Punctuality</h3>
               <p class="item__text section-text">
                 With us, you can feel safe and secure. An important principle of
@@ -103,13 +187,11 @@
               </p>
             </li>
             <li class="items">
-              <svg class="item__icon features__icon">
-                <use
-                  href="./images/icons.svg#icon-vector"
-                  width="70"
-                  height="70"
-                ></use>
-              </svg>
+              <div class="icon-block">
+                <svg class="item__icon features__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </div>
               <h3 class="item__subtitle section-subtitle">Planning</h3>
               <p class="item__text section-text">
                 You will be able to observe and participate in every phase of
@@ -117,13 +199,11 @@
               </p>
             </li>
             <li class="items">
-              <svg class="item__icon features__icon">
-                <use
-                  href="./images/icons.svg#icon-astronaut"
-                  width="70"
-                  height="70"
-                ></use>
-              </svg>
+              <div class="icon-block">
+                <svg class="item__icon features__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="item__subtitle section-subtitle">
                 Modern technologies
               </h3>
@@ -477,7 +557,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="footer__container container">
         <div class="footer__block">
           <a href="./index.html" class="logo link">WebStudio</a>
@@ -558,8 +638,8 @@
           </div>
         </form>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close" width="18" height="18">
@@ -623,7 +703,8 @@
           <button type="submit" class="modal-submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
