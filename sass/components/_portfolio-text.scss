@@ -1,0 +1,5 @@
+.portfolio-text {
+  @include font(16, 400, 30, 0.03);
+
+  color: var(--secondary-text-color);
+}

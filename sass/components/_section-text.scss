@@ -1,0 +1,5 @@
+.section-text {
+  @include font(14, 400, 24, 0.03);
+
+  color: var(--secondary-text-color);
+}

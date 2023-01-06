@@ -1,0 +1,33 @@
+.what-we-do {
+  display: none;
+  @include desktop {
+    display: unset;
+    padding-bottom: 94px;
+    & .list {
+      display: flex;
+      height: 294px;
+    }
+  }
+}
+
+.what-we-do .item {
+  position: relative;
+  width: 370px;
+  margin-right: 30px;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.what-we-do-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+}
