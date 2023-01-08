@@ -1,12 +1,15 @@
-.feature__list {
-  display: flex;
-  flex-wrap: wrap;
+.features {
   padding-bottom: 60px;
-  margin-bottom: -30px;
-  margin-left: -30px;
   @include desktop {
     padding-bottom: 94px;
   }
+}
+
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
 
 .items {

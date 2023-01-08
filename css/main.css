@@ -479,17 +479,20 @@ body {
   background-color: #ffffff;
 }
 
+.features {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 94px;
+  }
+}
+
 .feature__list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 60px;
   margin-bottom: -30px;
   margin-left: -30px;
-}
-@media screen and (min-width: 1200px) {
-  .feature__list {
-    padding-bottom: 94px;
-  }
 }
 
 .items {
