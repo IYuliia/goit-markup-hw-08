@@ -4,6 +4,7 @@
   & .list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
@@ -38,6 +39,9 @@
 
 .card-list__image {
   margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card-list__name {
@@ -49,11 +53,6 @@
   @include font(16, 400, 19, 0.03);
   color: var(--secondary-text-color);
   margin-bottom: 16px;
-}
-
-.social {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .social__link {
