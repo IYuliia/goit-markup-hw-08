@@ -83,7 +83,7 @@
 .authentication__tel {
   @include flex();
 
-  @include font(14, 500, 16, 0.02);
+  @include font(12, 500, 14, 0.02);
 
   color: var(--secondary-text-color);
 
@@ -94,6 +94,9 @@
   }
   @include tablet {
     margin-bottom: 10px;
+  }
+  @include desktop {
+    @include font(14, 500, 16, 0.02);
   }
 }
 
